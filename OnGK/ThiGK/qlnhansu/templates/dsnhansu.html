@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DANH SÁCH NHÂN SỰ</title>
+</head>
+<body>
+<h1><em>DANH SÁCH NHÂN SỰ</em></h1>
+<h2>
+    {% for nhan_su in nhan_sus %}
+    <li>{{ nhan_su.HoDem }}
+        {{ nhan_su.Ten }}
+        {{ nhan_su.NgaySing }}
+        {{ nhan_su.HeSoLuong }}
+        {{ nhan_su.DonViCongTac }}
+    </li>
+    {% endfor %}
+
+</h2>
+</body>
+</html>

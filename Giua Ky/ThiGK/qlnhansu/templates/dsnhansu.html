@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DANH SÁCH NHÂN SỰ</title>
+</head>
+<body>
+    <h1>DANH SÁCH NHÂN SỰ</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Họ đệm</th>
+                <th>Tên</th>
+                <th>Ngày sinh</th>
+                <th>Hệ số lương</th>
+                <th>Đơn vị công tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for nhan_su in danh_sach_nhan_su %}
+            <tr>
+                <td>{{ nhan_su.HoDem }}</td>
+                <td>{{ nhan_su.Ten }}</td>
+                <td>{{ nhan_su.NgaySinh }}</td>
+                <td>{{ nhan_su.HeSoLuong }}</td>
+                <td>{{ nhan_su.DonViLV }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

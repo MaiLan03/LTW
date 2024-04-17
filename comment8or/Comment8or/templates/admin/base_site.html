@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Log in | Django site admin</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #3c8dbc;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .login-form {
+            width: 300px;
+            margin: 0 auto;
+            padding-top: 100px;
+        }
+        .input-group {
+            margin: 10px 0;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .submit-btn {
+            background-color: #3c8dbc;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>c8admin</h1>
+    </div>
+    <div class="login-form">
+        <form action="/admin/login/?next=/admin/" method="post">
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" >
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <input class="submit-btn" type="submit" value="Log in">
+        </form>
+    </div>
+</body>
+</html>
